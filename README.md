@@ -3,7 +3,7 @@
 ![Flood Risk Prediction Screenshot](images/Screenshot%202025-05-16%20192058.png)
 
 ## Overview
-This project focuses on developing a comprehensive flood risk prediction model for property owners in Baltimore County, Maryland. The aim is to integrate geospatial analysis with environmental and historical flood data to accurately assess flood risks, providing valuable insights for property owners, insurance companies, and local government agencies. By predicting flood vulnerability, this tool helps stakeholders make informed decisions about property investment, insurance coverage, and flood mitigation strategies.
+This project develops a flood risk analysis pipeline for property owners in Baltimore County, Maryland. It combines property assessment data, flood probability data, geospatial processing, CatBoost modeling, and expected-loss analysis to help compare property-level flood vulnerability.
 
 ## Project Significance
 Flooding represents one of the most common and costly natural disasters in the United States. For Baltimore County specifically, changing climate patterns and increasing urbanization have heightened flood risks in recent years. This project addresses an urgent need for accurate, property-specific flood risk assessment to protect investments and potentially save lives.
@@ -74,7 +74,7 @@ jupyter>=1.0.0
 ### Installation & Setup
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/flood-risk-prediction.git
+   git clone https://github.com/axm0/flood-risk-prediction.git
    cd flood-risk-prediction
    ```
 
@@ -89,7 +89,7 @@ jupyter>=1.0.0
 
 3. Install required packages:
    ```bash
-   pip install -r requirements.txt
+   pip install pandas numpy matplotlib seaborn geopandas rasterio scikit-learn catboost jupyter rioxarray statsmodels
    ```
 
 ### Running the Analysis
